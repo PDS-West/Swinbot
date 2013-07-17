@@ -1217,143 +1217,48 @@ Timeout 60
 				</Item>
 			</Item>
 		</Item>
-		<Item Name="senor input.vi" Type="VI" URL="../senor input.vi"/>
+		<Item Name="MotorController.vi" Type="VI" URL="../MotorController.vi"/>
 		<Item Name="sensor wrapper rob.vi" Type="VI" URL="../sensor wrapper rob.vi"/>
 		<Item Name="Temp trig.vi" Type="VI" URL="../Temp trig.vi"/>
 		<Item Name="Whole map lib.vi" Type="VI" URL="../Whole map lib.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
-				<Item Name="LVFixedPointRepBitsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/fxp/LVFixedPointRepBitsTypeDef.ctl"/>
-				<Item Name="LVFixedPointRepRangeTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/fxp/LVFixedPointRepRangeTypeDef.ctl"/>
+				<Item Name="Get LV Class Default Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Default Value.vi"/>
+				<Item Name="NI_AAL_Angle.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AAL_Angle.lvlib"/>
+				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
+				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
+				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
 				<Item Name="NI_Robotics Utilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/robotics/Utilities/NI_Robotics Utilities.lvlib"/>
 				<Item Name="NI_Robotics_AbstractAstarNode.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/MapNode/AbstractAstarNode/NI_Robotics_AbstractAstarNode.lvclass"/>
 				<Item Name="NI_Robotics_AbstractDstarNode.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/MapNode/AbstractDstarNode/NI_Robotics_AbstractDstarNode.lvclass"/>
 				<Item Name="NI_Robotics_AbstractDstarWorldMap.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/WorldMap/AbstractDstarWorldMap/NI_Robotics_AbstractDstarWorldMap.lvclass"/>
 				<Item Name="NI_Robotics_AbstractMapNode.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/MapNode/AbstractMapNode/NI_Robotics_AbstractMapNode.lvclass"/>
 				<Item Name="NI_Robotics_AbstractWorldMap.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/WorldMap/AbstractWorldMap/NI_Robotics_AbstractWorldMap.lvclass"/>
+				<Item Name="NI_Robotics_Ackermann Steering Frame.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Steering/Ackermann Steering Frame/NI_Robotics_Ackermann Steering Frame.lvclass"/>
 				<Item Name="NI_Robotics_AnytimeDStar.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/Anytime D Star/NI_Robotics_AnytimeDStar.lvclass"/>
+				<Item Name="NI_Robotics_Caster Wheel.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Steering/Caster Wheel/NI_Robotics_Caster Wheel.lvclass"/>
+				<Item Name="NI_Robotics_Differential Steering Frame.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Steering/Differential Steering Frame/NI_Robotics_Differential Steering Frame.lvclass"/>
+				<Item Name="NI_Robotics_Fixed Wheel.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Steering/Fixed Wheel/NI_Robotics_Fixed Wheel.lvclass"/>
 				<Item Name="NI_Robotics_InconsistentList.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/InconsistentList/NI_Robotics_InconsistentList.lvclass"/>
+				<Item Name="NI_Robotics_Mecanum Steering Frame.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Steering/Mecanum Steering Frame/NI_Robotics_Mecanum Steering Frame.lvclass"/>
+				<Item Name="NI_Robotics_Mecanum Wheel.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Steering/Mecanum Wheel/NI_Robotics_Mecanum Wheel.lvclass"/>
+				<Item Name="NI_Robotics_Motor Communication Ref.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Actuation/Motor Communication Ref/NI_Robotics_Motor Communication Ref.lvclass"/>
+				<Item Name="NI_Robotics_Motor Communication Val.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Actuation/Motor Communication Val/NI_Robotics_Motor Communication Val.lvclass"/>
+				<Item Name="NI_Robotics_Motor Communication.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Actuation/Motor Communication/NI_Robotics_Motor Communication.lvclass"/>
 				<Item Name="NI_Robotics_OccupancyGridMapNode.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/MapNode/OccupancyGridNode/NI_Robotics_OccupancyGridMapNode.lvclass"/>
 				<Item Name="NI_Robotics_OccupancyGridWorldMap.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/WorldMap/OccupancyGridWorldMap/NI_Robotics_OccupancyGridWorldMap.lvclass"/>
+				<Item Name="NI_Robotics_Omnidirectional Wheel.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Steering/Omnidirectional Wheel/NI_Robotics_Omnidirectional Wheel.lvclass"/>
 				<Item Name="NI_Robotics_Priority Queue.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/Priority Queue/NI_Robotics_Priority Queue.lvclass"/>
-				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
-				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
+				<Item Name="NI_Robotics_Special Steering Frame.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Steering/Special Steering Frame/NI_Robotics_Special Steering Frame.lvclass"/>
+				<Item Name="NI_Robotics_Steering Frame.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Steering/Steering Frame/NI_Robotics_Steering Frame.lvclass"/>
+				<Item Name="NI_Robotics_Steering Wheel.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Steering/Steering Wheel/NI_Robotics_Steering Wheel.lvclass"/>
+				<Item Name="NI_Robotics_Wheel.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Steering/Wheel/NI_Robotics_Wheel.lvclass"/>
 			</Item>
-			<Item Name="EIO_TypeDescriptor.ctl" Type="VI" URL="/&lt;vilib&gt;/eio/EIO_TypeDescriptor.ctl"/>
-			<Item Name="Fifo_ArbOptionsString.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Types/Fifo_ArbOptionsString.ctl"/>
-			<Item Name="Fifo_PropertyBagTags.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Types/Fifo_PropertyBagTags.ctl"/>
-			<Item Name="niFpgaCacheSessionInfoDynamic.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaCacheSessionInfoDynamic.vi"/>
-			<Item Name="niFpgaCommUtilsConvertDataTypeRingToEnum.vi" Type="VI" URL="/&lt;resource&gt;/RVI/commonUtilities/niFpgaCommUtilsConvertDataTypeRingToEnum.vi"/>
-			<Item Name="niFpgaCommUtilsConvertOldAndNewArbOptions.vi" Type="VI" URL="/&lt;resource&gt;/RVI/commonUtilities/niFpgaCommUtilsConvertOldAndNewArbOptions.vi"/>
-			<Item Name="niFpgaCommUtilsCreateFixedSizeArray.vi" Type="VI" URL="/&lt;resource&gt;/RVI/commonUtilities/niFpgaCommUtilsCreateFixedSizeArray.vi"/>
-			<Item Name="niFpgaCommUtilsDataTypeEnumToType.vi" Type="VI" URL="/&lt;resource&gt;/RVI/commonUtilities/niFpgaCommUtilsDataTypeEnumToType.vi"/>
-			<Item Name="niFpgaCommUtilsDataTypePrefPageControl.ctl" Type="VI" URL="/&lt;resource&gt;/RVI/commonUtilities/niFpgaCommUtilsDataTypePrefPageControl.ctl"/>
-			<Item Name="niFpgaCommUtilsFxpPropertyBagTags.ctl" Type="VI" URL="/&lt;resource&gt;/RVI/commonUtilities/niFpgaCommUtilsFxpPropertyBagTags.ctl"/>
-			<Item Name="niFpgaCommUtilsGetConfigurationFromTagSetFxp.vi" Type="VI" URL="/&lt;resource&gt;/RVI/commonUtilities/niFpgaCommUtilsGetConfigurationFromTagSetFxp.vi"/>
-			<Item Name="niFpgaCommUtilsGetTagValueFromVariant.vi" Type="VI" URL="/&lt;resource&gt;/RVI/commonUtilities/niFpgaCommUtilsGetTagValueFromVariant.vi"/>
-			<Item Name="niFpgaCommUtilsGetTagValueFromVariant_ArbitrationOptions.vi" Type="VI" URL="/&lt;resource&gt;/RVI/commonUtilities/niFpgaCommUtilsGetTagValueFromVariant_ArbitrationOptions.vi"/>
-			<Item Name="niFpgaCommUtilsGetTagValueFromVariant_Boolean.vi" Type="VI" URL="/&lt;resource&gt;/RVI/commonUtilities/niFpgaCommUtilsGetTagValueFromVariant_Boolean.vi"/>
-			<Item Name="niFpgaCommUtilsGetTagValueFromVariant_DataType.vi" Type="VI" URL="/&lt;resource&gt;/RVI/commonUtilities/niFpgaCommUtilsGetTagValueFromVariant_DataType.vi"/>
-			<Item Name="niFpgaCommUtilsGetTagValueFromVariant_Double.vi" Type="VI" URL="/&lt;resource&gt;/RVI/commonUtilities/niFpgaCommUtilsGetTagValueFromVariant_Double.vi"/>
-			<Item Name="niFpgaCommUtilsGetTagValueFromVariant_FifoControlLogic.vi" Type="VI" URL="/&lt;resource&gt;/RVI/commonUtilities/niFpgaCommUtilsGetTagValueFromVariant_FifoControlLogic.vi"/>
-			<Item Name="niFpgaCommUtilsGetTagValueFromVariant_FifoImplementation.vi" Type="VI" URL="/&lt;resource&gt;/RVI/commonUtilities/niFpgaCommUtilsGetTagValueFromVariant_FifoImplementation.vi"/>
-			<Item Name="niFpgaCommUtilsGetTagValueFromVariant_FifoType.vi" Type="VI" URL="/&lt;resource&gt;/RVI/commonUtilities/niFpgaCommUtilsGetTagValueFromVariant_FifoType.vi"/>
-			<Item Name="niFpgaCommUtilsGetTagValueFromVariant_I32.vi" Type="VI" URL="/&lt;resource&gt;/RVI/commonUtilities/niFpgaCommUtilsGetTagValueFromVariant_I32.vi"/>
-			<Item Name="niFpgaCommUtilsGetTagValueFromVariant_InterfaceConfig.vi" Type="VI" URL="/&lt;resource&gt;/RVI/commonUtilities/niFpgaCommUtilsGetTagValueFromVariant_InterfaceConfig.vi"/>
-			<Item Name="niFpgaCommUtilsGetTagValueFromVariant_String.vi" Type="VI" URL="/&lt;resource&gt;/RVI/commonUtilities/niFpgaCommUtilsGetTagValueFromVariant_String.vi"/>
-			<Item Name="niFpgaCommUtilsGetTagValueFromVariant_U32.vi" Type="VI" URL="/&lt;resource&gt;/RVI/commonUtilities/niFpgaCommUtilsGetTagValueFromVariant_U32.vi"/>
-			<Item Name="niFpgaCommUtilsMatchFxpTypeToIntType.vi" Type="VI" URL="/&lt;resource&gt;/RVI/commonUtilities/niFpgaCommUtilsMatchFxpTypeToIntType.vi"/>
-			<Item Name="niFpgaCommUtilsSearchTagSetForValue.vi" Type="VI" URL="/&lt;resource&gt;/RVI/commonUtilities/niFpgaCommUtilsSearchTagSetForValue.vi"/>
-			<Item Name="niFpgaContainerArbitrationOptionsControl.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaContainerArbitrationOptionsControl.ctl"/>
-			<Item Name="niFpgaContainerImplementationControl.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaContainerImplementationControl.ctl"/>
-			<Item Name="niFpgaContainerInitializationParameters.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaContainerInitializationParameters.ctl"/>
-			<Item Name="niFpgaContainerLoadDataType.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaContainerLoadDataType.vi"/>
-			<Item Name="niFpgaContainerMultiElementAdjustTerminalDatatype.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaContainerMultiElementAdjustTerminalDatatype.vi"/>
-			<Item Name="niFpgaContainerProjectItemStateVersion01.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaContainerProjectItemStateVersion01.ctl"/>
-			<Item Name="niFpgaContainerState.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaContainerState.ctl"/>
-			<Item Name="niFpgaDataTypeControl.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaDataTypeControl.ctl"/>
-			<Item Name="niFpgaDynamicEmulationRegisterInfo.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/RandomDataEmulation/niFpgaDynamicEmulationRegisterInfo.ctl"/>
-			<Item Name="niFpgaDynamicRegisterResourceName.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/dynamic/niFpgaDynamicRegisterResourceName.vi"/>
-			<Item Name="niFpgaEscapeDelimiterAndNull.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/dynamic/niFpgaEscapeDelimiterAndNull.vi"/>
-			<Item Name="niFpgaFifoBuildState.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Common/niFpgaFifoBuildState.vi"/>
-			<Item Name="niFpgaFifoControlLogicControl.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Types/niFpgaFifoControlLogicControl.ctl"/>
-			<Item Name="niFpgaFifoGetProjectItemVersion.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/FIFO/Common/niFpgaFifoGetProjectItemVersion.vi"/>
-			<Item Name="niFpgaFifoGetState_Version01to06.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Common/niFpgaFifoGetState_Version01to06.vi"/>
-			<Item Name="niFpgaFifoGetState_Version07.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Common/niFpgaFifoGetState_Version07.vi"/>
-			<Item Name="niFpgaFifoGetState_Version08.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Common/niFpgaFifoGetState_Version08.vi"/>
-			<Item Name="niFpgaFifoGetState_Version09.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Common/niFpgaFifoGetState_Version09.vi"/>
-			<Item Name="niFpgaFifoGetState_Version10.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Common/niFpgaFifoGetState_Version10.vi"/>
-			<Item Name="niFpgaFifoGetState_Version11.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Common/niFpgaFifoGetState_Version11.vi"/>
-			<Item Name="niFpgaFifoGetState_Version12.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Common/niFpgaFifoGetState_Version12.vi"/>
-			<Item Name="niFpgaFifoProjectItemStateVersion05.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Common/niFpgaFifoProjectItemStateVersion05.ctl"/>
-			<Item Name="niFpgaFifoProjectItemStateVersion06.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Common/niFpgaFifoProjectItemStateVersion06.ctl"/>
-			<Item Name="niFpgaFifoProjectItemStateVersion07.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Common/niFpgaFifoProjectItemStateVersion07.ctl"/>
-			<Item Name="niFpgaGenCallStack.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niFpgaGenCallStack.vi"/>
-			<Item Name="niFpgaGetMainApplicationInstance.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/niFpgaGetMainApplicationInstance.vi"/>
-			<Item Name="niFpgaHandshakeGUIDConstant.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/niFpgaHandshakeGUIDConstant.vi"/>
-			<Item Name="niFpgaHandshakeLocalGUIDConstant.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/niFpgaHandshakeLocalGUIDConstant.vi"/>
-			<Item Name="niFpgaHandshakeLocalReferenceGUIDConstant.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/niFpgaHandshakeLocalReferenceGUIDConstant.vi"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="niFpgaMemoryInterfaceConfiguration.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Memory/Memory_Types/niFpgaMemoryInterfaceConfiguration.ctl"/>
-			<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
-			<Item Name="niFpgaRegisterGUIDConstant.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/niFpgaRegisterGUIDConstant.vi"/>
-			<Item Name="niFpgaRegisterLocalGUIDConstant.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/niFpgaRegisterLocalGUIDConstant.vi"/>
-			<Item Name="niFpgaRegisterLocalReferenceGUIDConstant.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/niFpgaRegisterLocalReferenceGUIDConstant.vi"/>
-			<Item Name="niFpgaSimulationCallBeginRW.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/Simulation/niFpgaSimulationCallBeginRW.vi"/>
-			<Item Name="niFpgaTransferTypeControl.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaTransferTypeControl.ctl"/>
-			<Item Name="niLvFpga_Close_Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/Dynamic/niLvFpga_Close_Dynamic.vi"/>
-			<Item Name="niLvFpgaAdjustHostInterfaceError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaAdjustHostInterfaceError.vi"/>
-			<Item Name="niLvFpgaErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaErrorClusterFromErrorCode.vi"/>
-			<Item Name="niLvFpgaFormatErrorSource.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaFormatErrorSource.vi"/>
-			<Item Name="niLvFpgaMergeErrorWithErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaMergeErrorWithErrorCode.vi"/>
-			<Item Name="niLvFpgaWhatHappensToTopLevelVI.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaWhatHappensToTopLevelVI.ctl"/>
-			<Item Name="nirviAbilityVIGUIDConstant.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviAbilityVIGUIDConstant.vi"/>
-			<Item Name="nirviBaseTSGUIDConstant.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviBaseTSGUIDConstant.vi"/>
-			<Item Name="nirviBuildSpecificationGUIDConstant.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviBuildSpecificationGUIDConstant.vi"/>
-			<Item Name="nirviDependenciesGUIDConstant.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviDependenciesGUIDConstant.vi"/>
-			<Item Name="nirviDerivedTSGUIDConstant.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviDerivedTSGUIDConstant.vi"/>
-			<Item Name="nirviExtractInfoFromVIQualifiedName.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/nirviExtractInfoFromVIQualifiedName.vi"/>
-			<Item Name="nirvififoGetConfigurationFromTagSet.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Common/nirvififoGetConfigurationFromTagSet.vi"/>
-			<Item Name="nirvififoGetFifoFromPropertyBag.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Common/nirvififoGetFifoFromPropertyBag.vi"/>
-			<Item Name="nirvififoGetInitialState.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Common/nirvififoGetInitialState.vi"/>
-			<Item Name="nirvififoGetPropertyBagTags.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Common/nirvififoGetPropertyBagTags.vi"/>
-			<Item Name="nirviFifoGUIDConstant.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviFifoGUIDConstant.vi"/>
-			<Item Name="nirviFifoLocalGUIDConstant.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviFifoLocalGUIDConstant.vi"/>
-			<Item Name="nirviFillInErrorInfo.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/nirviFillInErrorInfo.vi"/>
-			<Item Name="nirviFolderGUIDConstant.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviFolderGUIDConstant.vi"/>
-			<Item Name="nirviFPGADeviceGUIDConstant.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviFPGADeviceGUIDConstant.vi"/>
-			<Item Name="nirviGetTagSet.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviGetTagSet.vi"/>
-			<Item Name="nirviGetTargetItemRefnum.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviGetTargetItemRefnum.vi"/>
-			<Item Name="nirviGetVIShortcutItemFromTargetItem.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviGetVIShortcutItemFromTargetItem.vi"/>
-			<Item Name="nirviGUIDConstant_Clip.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviGUIDConstant_Clip.vi"/>
-			<Item Name="nirviGUIDConstant_ClipClock.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviGUIDConstant_ClipClock.vi"/>
-			<Item Name="nirviGUIDConstant_ClipDerivedClock.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviGUIDConstant_ClipDerivedClock.vi"/>
-			<Item Name="nirviGUIDConstant_LocalFifoReference.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviGUIDConstant_LocalFifoReference.vi"/>
-			<Item Name="nirviGUIDConstant_LocalMemory.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviGUIDConstant_LocalMemory.vi"/>
-			<Item Name="nirviGUIDConstant_LocalMemoryReference.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviGUIDConstant_LocalMemoryReference.vi"/>
-			<Item Name="nirviGUIDConstant_Provider.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviGUIDConstant_Provider.vi"/>
-			<Item Name="nirviGUIDPolyVI.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviGUIDPolyVI.vi"/>
-			<Item Name="nirviLrmNameUnmangle.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/LocalResourceManager/LRM_Common/nirviLrmNameUnmangle.vi"/>
-			<Item Name="nirviLrmResource_GetName.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/LocalResourceManager/LRM_API/nirviLrmResource_GetName.vi"/>
-			<Item Name="nirviMemoryGUIDConstant.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviMemoryGUIDConstant.vi"/>
-			<Item Name="nirviMiWithFPGAConstant.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviMiWithFPGAConstant.vi"/>
-			<Item Name="nirviMyComputerGUIDConstant.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviMyComputerGUIDConstant.vi"/>
-			<Item Name="nirviOpenVIInDeviceContext.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/nirviOpenVIInDeviceContext.vi"/>
-			<Item Name="nirviOwningLibraryOfProjectItem.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviOwningLibraryOfProjectItem.vi"/>
-			<Item Name="nirviRandomDataOpen.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/RandomDataEmulation/nirviRandomDataOpen.vi"/>
-			<Item Name="nirviReportUnexpectedCaseInternalError (Bool).vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/nirviReportUnexpectedCaseInternalError (Bool).vi"/>
-			<Item Name="nirviReportUnexpectedCaseInternalError (String).vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/nirviReportUnexpectedCaseInternalError (String).vi"/>
-			<Item Name="nirviReportUnexpectedCaseInternalError (U32).vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/nirviReportUnexpectedCaseInternalError (U32).vi"/>
-			<Item Name="nirviReportUnexpectedCaseInternalError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/nirviReportUnexpectedCaseInternalError.vi"/>
-			<Item Name="nirviReportUnexpectedCaseInternalErrorHelper.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/nirviReportUnexpectedCaseInternalErrorHelper.vi"/>
-			<Item Name="nirviSystemGUIDConstant.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviSystemGUIDConstant.vi"/>
-			<Item Name="nirviVIActualGUID.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviVIActualGUID.vi"/>
-			<Item Name="nirviVILibraryGUIDConstant.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviVILibraryGUIDConstant.vi"/>
-			<Item Name="nirviVIUnderDevice.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/project/nirviVIUnderDevice.vi"/>
-			<Item Name="nirviXnPropertyCluster.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/XNode/Project/nirviXnPropertyCluster.ctl"/>
 			<Item Name="Path To Grid.vi" Type="VI" URL="../Path To Grid.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
