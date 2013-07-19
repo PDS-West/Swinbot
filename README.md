@@ -24,4 +24,4 @@ And a great guide to git is here:
 It is in bash, but really easy and explains the concepts great. just use the gui version after u learn the concepts.
 http://try.github.io/levels/1/challenges/1
 
-
+Scott made a change
